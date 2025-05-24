@@ -148,7 +148,7 @@ export default function Transfers() {
               quantity: Math.max(0, parseInt(e.target.value) || 0)
             })}
             min="1"
-            max={filteredAssets.find(a => a.id == formData.assetId)?.currentBalance || 0}
+            max={filteredAssets.find(a => a.id === formData.assetId)?.currentBalance || 0}
             required
           />
 
